@@ -2,19 +2,17 @@
 *{
   margin: 0;
   padding: 0;
-}
-body{
-  font-family: 'Exo', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 .area{
-  background: #4e54c8;
-  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
-  height: 100vh;
+   background: #032b58;  
+  background: -webkit-linear-gradient(to left, #68d5f3, #032b58);
   width: 100%;
-  padding: 100px 0px;
+  height: 100vh;
 }
 .circles{
-  position: absolute;
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
@@ -111,58 +109,81 @@ body{
   }
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
-}
-body{
-  background-color: #E8F9FF;
-}
-.upper-block{
-  width: 70%;
-  /* border: 2px solid red; */
-  margin:  auto;
-  border-radius: 6px;
-  padding: 28px;
-  background-color: white;
-}
-.content{
+/* .......old css */
+
+main{
+  /* background-color: #032b58;  */
   width: 100%;
-  /* background-color: bisque; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.header-image{
-  width: 100%;
-  height: 120px;
-  object-fit: cover ;
+.login-card{
+  position: relative;
+  z-index: 2;
+  border-radius: 5px;
+  padding: 28px 28px 60px 28px;
+  background-color: #d0eefe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 20px rgba(0, 3, 6, 0.7);
 }
-.header-image-container{
-  margin-bottom: 20px;
+.logo{
+  background-color: rgb(41, 121, 135);
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 3, 6, 0.6);
+  margin-bottom: 22px;
 }
-.details{
-  font-size: 13px;
-  line-height: 19px;
+.truck-image{
+  width: 90px;
+  height: 90px;
+}
+.sign-in{
+  font-size: 25px;
+  margin-bottom: 22px;
+  color: rgb(82, 82, 82);
+}
+.email-input, .password-input{
+  width: 300px;
+  height: 40px;
+  padding: 10px 40px 10px 20px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  background-color: transparent;
   margin-bottom: 15px;
 }
-.procurement-anywhere-link{
-  color: rgb(32, 128, 202);
-  font-weight: 600;
-  text-decoration: none;
+.password-input{
+  margin-bottom: 20px;
 }
-.download-button{
-  background-color: rgb(19, 140, 205);
-  padding: 10px 10px;
-  font-weight: 600;
-  border: none;
-  border-radius: 5px;
+form{
+  display: flex;
+  flex-direction: column;
 }
-.download-xl-link{
-  text-decoration: none;
- color: white;
+.checkbox-window{
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
 }
-
-
-
-
+.remember{
+  margin-left: 5px;
+  font-size: 13px;
+}
+button{
+color: white;
+font-weight: bold;
+width: 300px;
+height: 40px;
+padding: 10px 40px ;
+border-radius: 20px;
+border: none;
+background-color: rgb(2, 88, 163);
+cursor: pointer;
+transition: background-color 0.15s;
+}
+button:hover{
+background-color: rgb(1, 58, 108);
+}
 
