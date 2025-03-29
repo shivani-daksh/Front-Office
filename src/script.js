@@ -73,6 +73,7 @@ function toRun(event) {
     registerButton.disabled = true;
     registerButton.style.cursor = "not-allowed";
     registerButton.style.opacity = "0.6";
+    registerButton.style.boxShadow = "none";
   }
    
 }

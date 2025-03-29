@@ -1,182 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Onboarding</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <div class="upper-block">
       <div class="content">
-        <div class="header-image-container">
-          <img class="header-image" src="../Images/horizontal_on_transparent_by_logaster.png" alt="uiPath-image">
-
-          <div class="video-container">
-            <video height="165" autoplay muted loop=1>
-              <source src="../Images/vecteezy_flat-rocket-animation-video-design-rocket-ship-in-the-sky_39592364.mp4" type="video/mp4">
-            </video>
+        <div class="header-container">
+          <div class="logo-container">
+            <img
+              class="logo-image"
+              src="../Images/horizontal_on_transparent_by_logaster.png"
+              alt="uiPath-image"
+            />
           </div>
 
+          <div class="video-container">
+            <video height="165" autoplay muted loop="1">
+              <source
+                src="../Images/vecteezy_flat-rocket-animation-video-design-rocket-ship-in-the-sky_39592364.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
         </div>
-
-      
 
         <div class="details">
           <p>
-            New corporate customers need to be added to The CYB LLP customer relationship management system. Download the CSV below and enter each missing customer's information. Click 'Register' after entering each customer's details to commit them to the CRM. Once all 7 customers' details have been entered, your score for the exercise will be displayed.
+            New corporate customers need to be added to The CYB LLP customer
+            relationship management system. Download the CSV below and enter
+            each missing customer's information. Click 'Register' after entering
+            each customer's details to commit them to the CRM. Once all 7
+            customers' details have been entered, your score for the exercise
+            will be displayed.
           </p>
         </div>
+
         
-
-        <button class="download-button">
-          <a class="download-xl-link" href="../customer-onboarding.csv" download="file.csv">Download CSV</a> 
+          <a
+            class="download-xl-link"
+            href="../customer-onboarding.csv"
+            download="file.csv"
+            ><button class="download-button">Download CSV</button></a
+          >
         </button>
-
+      
       </div>
     </div>
 
 
     <div class="lower-block">
       <div class="content">
-        
         <div class="info">
           <h1>Customer Onboarding</h1>
-            <p>Please fill in customer details to add each new customer to the customer relationship management system.
-            </p>
+          <p>
+            Please fill in customer details to add each new customer to the
+            customer relationship management system.
+          </p>
         </div>
-        
+
         <form>
-        
-          <input class="customer-name-input full-width-input" type="text" placeholder="Customer Name">
+          <input
+            class="customer-name-input full-width-input"
+            type="text"
+            placeholder="Customer Name"
+          />
 
-          <input class="customer-id-input full-width-input" type="text" placeholder="Customer ID">
+          <div class="double-input">
+            <input
+            class="customer-id-input full-width-input inline-input"
+            type="text"
+            placeholder="Customer ID"
+          />
 
-          <input class="primary-contact-input full-width-input" type="text" placeholder="Primary Contact">
-
-          <input class="street-address-input full-width-input" type="text" placeholder="Street Address">
-
-        <div class="three-inputs">
-
-          <input type="text" placeholder="City"
-          class="inline-input city-input">
-
-          <select name="states" class="inline-input state-input" >
-            <option value="select">Select</option>
-            <option value="al">AL</option>
-            <option value="ak">AK</option>
-            <option value="ar">AR</option>
-            <option value="az">AZ</option>
-            <option value="ca">CA</option>
-            <option value="co">CO</option>
-            <option value="ct">CT</option>
-            <option value="dc">DC</option>
-            <option value="de">DE</option>
-            <option value="fl">FL</option>
-            <option value="ga">GA</option>
-            <option value="hi">HI</option>
-            <option value="ia">IA</option>
-            <option value="id">ID</option>
-            <option value="il">IL</option>
-            <option value="in">IN</option>
-            <option value="ks">KS</option>
-            <option value="ky">KY</option>
-            <option value="la">LA</option>
-            <option value="ma">MA</option>
-            <option value="md">MD</option>
-            <option value="me">ME</option>
-            <option value="mi">MI</option>
-            <option value="mn">MN</option>
-            <option value="mo">MO</option>
-            <option value="ms">MS</option>
-            <option value="mt">MT</option>
-            <option value="nc">NC</option>
-            <option value="ne">NE</option>
-            <option value="nh">NH</option>
-            <option value="nj">NJ</option>
-            <option value="nm">NM</option>
-            <option value="nv">NV</option>
-            <option value="ny">NY</option>
-            <option value="nd">ND</option>
-            <option value="oh">OH</option>
-            <option value="ok">OK</option>
-            <option value="or">OR</option>
-            <option value="pa">PA</option>
-            <option value="ri">RI</option>
-            <option value="sc">SC</option>
-            <option value="sd">SD</option>
-            <option value="tn">TN</option>
-            <option value="tx">TX</option>
-            <option value="ut">UT</option>
-            <option value="vt">VT</option>
-            <option value="va">VA</option>
-            <option value="wa">WA</option>
-            <option value="wi">WI</option>
-            <option value="wv">WV</option>
-            <option value="wy">WY</option>
-          </select>
-
-          <input type="text" placeholder="Zip"
-          class="inline-input zip-input">
-
-        </div>
-
-          <input class="email-address-input full-width-input" type="text" placeholder="Email Address">
-
-    
-        <div class="line"></div>
-
-        <div class="other-inputs">
-          <div class="discount">
-            <p>Active Discount Offered?</p>
-            <input type="radio" id="yes"  value="yes" name="ans">
-            <label for="yes">Yes</label>
-            <input type="radio" id="no" value="no" name="ans">
-            <label for="no">No</label> 
+          <input
+            class="primary-contact-input full-width-input inline-input"
+            type="text"
+            placeholder="Primary Contact"
+          />
           </div>
 
-          <div class="agreement">
-            <p>Non-Disclosure Agreement</p>
-            <input type="checkbox" id="agreement">
-            <label for="agreement">Non-Disclosure Agreement on File</label>
-          </div>
-        </div>
+          
 
-        <button class="register-button" type="submit" onclick="
+          <input
+            class="street-address-input full-width-input"
+            type="text"
+            placeholder="Street Address"
+          />
+
+          <div class="three-inputs">
+            <input
+              type="text"
+              placeholder="City"
+              class="inline-input city-input"
+            />
+
+            <select name="states" class="inline-input state-input">
+              <option value="select">Select</option>
+              <option value="al">AL</option>
+              <option value="ak">AK</option>
+              <option value="ar">AR</option>
+              <option value="az">AZ</option>
+              <option value="ca">CA</option>
+              <option value="co">CO</option>
+              <option value="ct">CT</option>
+              <option value="dc">DC</option>
+              <option value="de">DE</option>
+              <option value="fl">FL</option>
+              <option value="ga">GA</option>
+              <option value="hi">HI</option>
+              <option value="ia">IA</option>
+              <option value="id">ID</option>
+              <option value="il">IL</option>
+              <option value="in">IN</option>
+              <option value="ks">KS</option>
+              <option value="ky">KY</option>
+              <option value="la">LA</option>
+              <option value="ma">MA</option>
+              <option value="md">MD</option>
+              <option value="me">ME</option>
+              <option value="mi">MI</option>
+              <option value="mn">MN</option>
+              <option value="mo">MO</option>
+              <option value="ms">MS</option>
+              <option value="mt">MT</option>
+              <option value="nc">NC</option>
+              <option value="ne">NE</option>
+              <option value="nh">NH</option>
+              <option value="nj">NJ</option>
+              <option value="nm">NM</option>
+              <option value="nv">NV</option>
+              <option value="ny">NY</option>
+              <option value="nd">ND</option>
+              <option value="oh">OH</option>
+              <option value="ok">OK</option>
+              <option value="or">OR</option>
+              <option value="pa">PA</option>
+              <option value="ri">RI</option>
+              <option value="sc">SC</option>
+              <option value="sd">SD</option>
+              <option value="tn">TN</option>
+              <option value="tx">TX</option>
+              <option value="ut">UT</option>
+              <option value="vt">VT</option>
+              <option value="va">VA</option>
+              <option value="wa">WA</option>
+              <option value="wi">WI</option>
+              <option value="wv">WV</option>
+              <option value="wy">WY</option>
+            </select>
+
+            <input
+              type="text"
+              placeholder="Zip"
+              class="inline-input zip-input"
+            />
+          </div>
+
+          <input
+            class="email-address-input full-width-input"
+            type="text"
+            placeholder="Email Address"
+          />
+
+          <div class="line"></div>
+
+          <div class="other-inputs">
+            <div class="discount">
+              <p>Active Discount Offered?</p>
+              <input type="radio" id="yes" value="yes" name="ans" />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" value="no" name="ans" />
+              <label for="no">No</label>
+            </div>
+
+            <div class="agreement">
+              <p>Non-Disclosure Agreement</p>
+              <input type="checkbox" id="agreement" />
+              <label for="agreement">Non-Disclosure Agreement on File</label>
+            </div>
+          </div>
+
+          <button
+            class="register-button"
+            type="submit"
+            onclick="
         toRun(event);
-        ">Register</button> 
+        "
+          >
+            Register
+          </button>
 
-        <div class="score-field">Correctly Submitted Fields: 0/0</div>
-
-      </form>
-
-
+          <div class="score-field">Correctly Submitted Fields: 0/0</div>
+        </form>
       </div>
     </div>
 
-  </div> 
+    
+    <footer>
+      <div class="footer-container">
+        &copy; 2025 CYB. All Rights Reserved.
+      </div>
+    </footer>
 
 
 
-  <div class="overlay" id="overlay"></div>
+    <div class="overlay" id="overlay"></div>
 
-  <div class="popup" id="popup">
-    <i class="fa-solid fa-check-circle blue-tick"></i>
+    <div class="popup" id="popup">
+      <i class="fa-solid fa-check-circle blue-tick"></i>
 
-
-    <!-- <i class="fa-solid fa-check-circle blue-tick"></i>
+      <!-- <i class="fa-solid fa-check-circle blue-tick"></i>
     <i class="fa-solid fa-circle-xmark "></i> -->
-    <h2 class="popup-heading">Thank You!</h2>
-    <p class="popup-details">The customer details has been submitted successfully.</p>
-    <button class="ok-btn">OK</button>
-  </div>
+      <h2 class="popup-heading">Thank You!</h2>
+      <p class="popup-details">
+        The customer details has been submitted successfully.
+      </p>
+      <button class="ok-btn">OK</button>
+    </div>
 
-
-
-  <script src="./script.js"></script>
-
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
